@@ -26,8 +26,8 @@ p{
 }
 
 section{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .is_blue{
@@ -63,29 +63,28 @@ nav #navCollapse ul li a{
     -ms-text-stroke-color: black;
 }
 
+.navbar-brand{
+    font-size: 2em;
+}
+
 #hero{
     background-color: grey;
     padding-bottom: 0;
+    padding-top: 50px;
 }
 
-#hero img{
-    width: 100%;
-    -webkit-opacity: 0.5;
-    -mos-opacity: 0.5;
-    -ms-opacity: 0.5;
-}
-
-#our_people .staff-details{
+#our_people .details{
     font-size: 0.7em;
     text-align: center;
 }
 
-#our_people .staff-details .col-heading{
+#our_people .details .col-heading{
     font-size: 1.2em;
 }
 
 #services ul{
-    margin-left: 1em;
+    width: 65%;
+    margin-left: 17.5%;
 }
 
 #services ul li{
@@ -107,35 +106,50 @@ nav #navCollapse ul li a{
     padding-bottom: 5px;
 }
 
-.profile-pic{
+.img-wrapper{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: grey;
+    background-color: white;
     margin: 0 auto;
 }
 
-.staff-details{
+.details{
     margin-bottom: 10px;
 }
 
-#mick-serena{
+#profile1{
     background: url('../img/Mick.jpg') no-repeat;
     background-size: cover;
 }
 
-#lisa-brown{
+#profile2{
     background: url('../img/lisa.jpg') no-repeat;
     background-size: cover;
 }
 
-#wayne-ford{
+#profile3{
     background: url('../img/Wayne.jpg') no-repeat;
     background-size: cover;
 }
 
-#ami-spinks{
+#profile4{
     background: url('../img/Ami.jpg') no-repeat;
+    background-size: cover;
+}
+
+#profile5{
+    background: url('../img/Teifi.jpg') no-repeat;
+    background-size: cover;
+}
+
+#profile6{
+    background: url('../img/Phill.jpg') no-repeat;
+    background-size: cover;
+}
+
+#profile7{
+    background: url('../img/Nicole.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -149,7 +163,8 @@ nav #navCollapse ul li a{
 
 #contact a{
     text-decoration: none;
-    color: white;
+    /*color: white;*/
+    color: black;
 }
 
 #map{
@@ -168,18 +183,24 @@ nav #navCollapse ul li a{
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     color: white;
 }
 
 .hero-text .hero-heading{
-    font-size: 150%;
+    font-size: 250%;
 }
 
 .hero-text .sub-text{
-    font-size: 0.8em;
+    font-size: 1.5em;
 }
+
+.hero-text .sub-text p{
+    text-align: left;
+    font-size: 120%;
+}
+
 
 .project-container{
     position: relative;
@@ -201,10 +222,11 @@ nav #navCollapse ul li a{
     font-size: 0.8em;
 }
 
-.project-container img{
+.hero img, .project-container img{
     -webkit-filter: brightness(50%);
     -moz-filter: brightness(50%);
     -ms-filter: brightness(50%);
+    width: 100%;
 }
 
 #projects-gallery{
@@ -219,8 +241,12 @@ and (min-device-width : 375px)
 and (max-device-width : 812px) 
 and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) { 
-     #map{
-        height: 1633px;
+    #services ul{
+        width: 100%;
+        margin-left: 0;
+    }
+    #services ul li{
+        font-size: 1em;
     }
 }
 
@@ -228,26 +254,20 @@ and (orientation : portrait) {
 and (min-device-width : 375px) 
 and (max-device-width : 667px) 
 and (orientation : portrait) {
-    #map{
-        height: 1633px;
-    }
+  
 }
 
 /* IPhone 5/5S Portrait */
 @media only screen 
 and (max-device-width : 320px) 
 and (orientation : portrait) {
-    #map{
-        height: 1252px;
-    }
+
 }
 
 @media only screen 
 and (max-device-width : 360px) 
 and (orientation : portrait) {
-    #map{
-        height: 1252px;
-    }
+
 }
 
 /* IPad Pro*/
@@ -255,16 +275,30 @@ and (orientation : portrait) {
 and (min-device-width: 1024px) 
 and (max-device-width: 1366px) 
 and (orientation: portrait){
-    #map{
-        height: 880px;
-    }
+
 }
 
 @media only screen 
 and (min-device-width: 768px)
 and (max-device-width: 1023px)
 and (orientation: portrait){
-    #map{
-        height: 824px;
+    
+    #services ul{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media all and (max-width: 768px){
+    .hero-text .hero-heading{
+        font-size: 120%;
+    }
+    
+    .hero-text .sub-text{
+        font-size: 0.5em;
+    }
+    
+    p{
+        font-size: 0.8em;
     }
 }
