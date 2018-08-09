@@ -1,0 +1,270 @@
+@font-face{
+    font-family: 'Segoe UI';
+    src: url('segoeui.ttf');
+}
+
+@font-face{
+    font-family: 'Keep Calm';
+    src: url('KeepCalm-Medium.ttf')
+}
+
+body, html{
+    font-family: 'Segoe UI';
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    text-align: center;
+}
+
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.is_blue{
+    background-color: rgb(0, 62, 154);
+    color: white;
+}
+
+.custom-heading{
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+nav{
+    font-size: 1em;
+    background-color: white;
+    font-family: 'Keep Calm';
+    font-size: 0.7em;
+}
+
+nav #navCollapse ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+#logo{
+    color: rgb(0, 102, 255);
+    -webkit-text-stroke-width: 0.5px;
+    -moz-text-stroke-width: 0.5px;
+    -ms-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    -moz-text-stroke-color: black;
+    -ms-text-stroke-color: black;
+}
+
+#hero{
+    background-color: grey;
+    padding-bottom: 0;
+}
+
+#hero img{
+    width: 100%;
+    -webkit-opacity: 0.5;
+    -mos-opacity: 0.5;
+    -ms-opacity: 0.5;
+}
+
+#our_people .staff-details{
+    font-size: 0.7em;
+    text-align: center;
+}
+
+#our_people .staff-details .col-heading{
+    font-size: 1.2em;
+}
+
+#services ul{
+    margin-left: 1em;
+}
+
+#services ul li{
+    font-size: 0.7em;
+}
+
+#services .logo-container{
+    text-align: center;
+}
+
+#services .logo-container img{
+    width: 10em;
+    height: 10em;
+}
+
+.col-heading{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 0 auto;
+}
+
+.staff-details{
+    margin-bottom: 10px;
+}
+
+#mick-serena{
+    background: url('../img/Mick.jpg') no-repeat;
+    background-size: cover;
+}
+
+#lisa-brown{
+    background: url('../img/lisa.jpg') no-repeat;
+    background-size: cover;
+}
+
+#wayne-ford{
+    background: url('../img/Wayne.jpg') no-repeat;
+    background-size: cover;
+}
+
+#ami-spinks{
+    background: url('../img/Ami.jpg') no-repeat;
+    background-size: cover;
+}
+
+#footer{
+    margin-top: auto;
+    font-size: 1em;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#contact a{
+    text-decoration: none;
+    color: white;
+}
+
+#map{
+    max-width: 100%;
+    display: block;
+    height: 34em;
+}
+
+.hero{
+    position: relative;
+    float: left;
+}
+
+.hero-text{
+    font-family: 'Keep Calm';
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text .hero-heading{
+    font-size: 150%;
+}
+
+.hero-text .sub-text{
+    font-size: 0.8em;
+}
+
+.project-container{
+    position: relative;
+    float: left;
+}
+
+.project-container .project-text{
+    font-family: 'Keep Calm';
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1em;
+}
+
+.project-text .project-name{
+    font-size: 0.8em;
+}
+
+.project-container img{
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+}
+
+#projects-gallery{
+    padding: 0;
+}
+
+/************* MEDIA QUERIES *****************/
+
+/* IPhone X Portrait */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) { 
+     #map{
+        height: 1633px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) {
+    #map{
+        height: 1633px;
+    }
+}
+
+/* IPhone 5/5S Portrait */
+@media only screen 
+and (max-device-width : 320px) 
+and (orientation : portrait) {
+    #map{
+        height: 1252px;
+    }
+}
+
+@media only screen 
+and (max-device-width : 360px) 
+and (orientation : portrait) {
+    #map{
+        height: 1252px;
+    }
+}
+
+/* IPad Pro*/
+@media only screen 
+and (min-device-width: 1024px) 
+and (max-device-width: 1366px) 
+and (orientation: portrait){
+    #map{
+        height: 880px;
+    }
+}
+
+@media only screen 
+and (min-device-width: 768px)
+and (max-device-width: 1023px)
+and (orientation: portrait){
+    #map{
+        height: 824px;
+    }
+}

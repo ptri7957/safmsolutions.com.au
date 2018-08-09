@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SAFM Solutions | Projects</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/jquery-backToTop.min.css" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"rel="stylesheet" >
+        <link href="css/back-to-top.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-light fixed-top navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><strong><span id="logo">SAFM</span> SOLUTIONS</strong></a>
+                <button class="navbar-toggler" type="button" data-target="#navCollapse" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-scroll" id="navCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </nav>
+        
+        <section id="hero" class="hero project-hero">
+            <img src="img/hero.jpg" class="img-responsive">
+            <div class="hero-text">
+                <i>
+                <div class="hero-heading">PROJECTS</div>
+                <div class="sub-text">Delivering a diverse range of projects reaching across Australia and New Zealand in a number of sectors.</div>
+                </i>
+            </div>
+        </section>
+        
+        <section id="projects-gallery">
+            <div class="row no-gutters">
+                <div class="col-xl-4 col-lg-12 col-md-12">
+                    <div class="project-box project-container">
+                        <img class="img-responsive" src="img/Projects/proj1.jpg" width="100%">
+                        <div class="project-text">
+                            <div class="project-header">CHARLES DARWIN UNIVERSITY</div>
+                            <div class="project-name">CITY DEAL NEGOTIATION</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-12 col-md-12">
+                    <div class="project-box project-container">
+                        <img class="img-responsive" src="img/Projects/proj2.jpg" width="100%">
+                        <div class="project-text">
+                            <div class="project-header">TEST ORG</div>
+                            <div class="project-name">PROJECT 2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-12 col-md-12">
+                    <div class="project-box project-container">
+                        <img class="img-responsive" src="img/Projects/proj3.jpg" width="100%">
+                        <div class="project-text">
+                            <div class="project-header">TEST ORG</div>
+                            <div class="project-name">PROJECT 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        <section id="clients">
+            <div class="container">
+                <div class="custom-heading">CLIENTS</div>
+                <p>Our ability to deliver high quality products and services is evidenced by many of the most respected Australian and New Zealand organisations who have chosen to partner with us to achieve their asset management and organisational goals.</p>
+                <div class="row">
+                
+                </div>
+            </div>
+        </section>
+        -->
+        <section id="footer">
+            <div class="container">
+                &copy 2018 SAFM Solutions
+            </div>
+        </section>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/back-to-top.min.js"></script>
+        <script src="js/scrollreveal.min.js"></script>
+        <script>
+            var $button = $.backToTop({
+                scroll: 1,
+                theme: 'fawesome'});
+        </script>
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('.project-box', { delay: 500, duration: 400, useDelay: 'onload', interval: 200, scale:.3, distance:"0px" });
+        </script>
+    </body>
+</html>
