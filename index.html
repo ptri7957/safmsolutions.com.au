@@ -59,49 +59,37 @@
                 <p>Our aim is to <strong>'delight the client'</strong> and our client/people centric approach enables us to establish real partnerships for the delivery of bespoke services tailored to meet client needs. Our team has delivered a diverse range of projects from the following sectors:</p>
                 <div class="row">
                     <div class="col-xl-4 col-md-6 box">
-                        <div class="img-wrapper">
-                            <img src="img/Sector icons/No Background/higher education.png" class="img-responsive" style="width: 100%;">
-                        </div>
+                        <div class="img-wrapper" id="sector1"></div>
                         <div class="details">
                             <div class="col-heading">Higher Education</div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 box">
-                        <div class="img-wrapper">
-                            <img src="img/Sector icons/No Background/aged care.png" class="img-responsive" style="width: 100%;">
-                        </div>
+                        <div class="img-wrapper" id="sector2"></div>
                         <div class="details">
                             <div class="col-heading">Aged Care</div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 box">
-                        <div class="img-wrapper">
-                            <img src="img/Sector icons/No Background/government.png" class="img-responsive" style="width: 100%;">
-                        </div>
+                        <div class="img-wrapper" id="sector3"></div>
                         <div class="details">
                             <div class="col-heading">Government</div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 box">
-                        <div class="img-wrapper">
-                            <img src="img/Sector icons/No Background/health.png" class="img-responsive" style="width: 100%;">
-                        </div>
+                        <div class="img-wrapper" id="sector4"></div>
                         <div class="details">
                             <div class="col-heading">Health</div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 box">
-                        <div class="img-wrapper">
-                            <img src="img/Sector icons/No Background/not for profit.png" class="img-responsive" style="width: 100%;">
-                        </div>
+                        <div class="img-wrapper" id="sector5"></div>
                         <div class="details">
                             <div class="col-heading">Not for Profit</div>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 box">
-                        <div class="img-wrapper">
-                            <img src="img/Sector icons/No Background/private sector.png" class="img-responsive" style="width: 100%;">
-                        </div>
+                        <div class="img-wrapper" id="sector6"></div>
                         <div class="details">
                             <div class="col-heading">Private Sector</div>
                         </div>
@@ -278,7 +266,7 @@
         <script src="js/back-to-top.min.js"></script>
         <script>
             window.sr = ScrollReveal();
-            sr.reveal('.box', { delay: 200, duration: 400, useDelay: 'onload', interval: 200, scale:.3, distance:"0px" });
+            sr.reveal('.box', { origin: 'left', delay: 200, duration: 400, useDelay: 'onload', interval: 200, scale:.3, distance:"0px" });
         </script>
         <script>
             var $button = $.backToTop({
@@ -300,6 +288,8 @@
               
             marker.setMap(map);
           }
+            
+            
         </script>
         <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBmPCFkBHV30QsL2SklJDJCvulJs235rHs&libraries=places&&callback=initMap'></script>
     </body>

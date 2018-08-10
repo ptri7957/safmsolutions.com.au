@@ -118,6 +118,36 @@ nav #navCollapse ul li a{
     margin-bottom: 10px;
 }
 
+#sector1{
+    background: url('../img/Sector icons/Black and white/higher education .png') no-repeat;
+    background-size: cover;
+}
+
+#sector2{
+    background: url('../img/Sector icons/Black and white/aged care.png') no-repeat;
+    background-size: cover;
+}
+
+#sector3{
+    background: url('../img/Sector icons/Black and white/Government .png') no-repeat;
+    background-size: cover;
+}
+
+#sector4{
+    background: url('../img/Sector icons/Black and white/Health .png') no-repeat;
+    background-size: cover;
+}
+
+#sector5{
+    background: url('../img/Sector icons/Black and white/not for profit .png') no-repeat;
+    background-size: cover;
+}
+
+#sector6{
+    background: url('../img/Sector icons/Black and white/private sector.png') no-repeat;
+    background-size: cover;
+}
+
 #profile1{
     background: url('../img/Mick.jpg') no-repeat;
     background-size: cover;
@@ -153,18 +183,16 @@ nav #navCollapse ul li a{
     background-size: cover;
 }
 
+#contact a{
+    color: black;
+}
+
 #footer{
     margin-top: auto;
     font-size: 1em;
     text-align: center;
     background-color: black;
     color: white;
-}
-
-#contact a{
-    text-decoration: none;
-    /*color: white;*/
-    color: black;
 }
 
 #map{
@@ -188,6 +216,13 @@ nav #navCollapse ul li a{
     color: white;
 }
 
+.hero img{
+    width: 100%;
+    -webkit-filter: brightness(0.5);
+    -moz-filter: brightness(0.5);
+    -ms-filter: brightness(0.5);
+}
+
 .hero-text .hero-heading{
     font-size: 250%;
 }
@@ -199,38 +234,6 @@ nav #navCollapse ul li a{
 .hero-text .sub-text p{
     text-align: left;
     font-size: 120%;
-}
-
-
-.project-container{
-    position: relative;
-    float: left;
-}
-
-.project-container .project-text{
-    font-family: 'Keep Calm';
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1em;
-}
-
-.project-text .project-name{
-    font-size: 0.8em;
-}
-
-.hero img, .project-container img{
-    -webkit-filter: brightness(50%);
-    -moz-filter: brightness(50%);
-    -ms-filter: brightness(50%);
-    width: 100%;
-}
-
-#projects-gallery{
-    padding: 0;
 }
 
 /************* MEDIA QUERIES *****************/
@@ -291,14 +294,10 @@ and (orientation: portrait){
 
 @media all and (max-width: 768px){
     .hero-text .hero-heading{
-        font-size: 120%;
+        font-size: 100%;
     }
     
     .hero-text .sub-text{
-        font-size: 0.5em;
-    }
-    
-    p{
         font-size: 0.8em;
     }
 }
