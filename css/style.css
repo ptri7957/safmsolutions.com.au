@@ -85,10 +85,15 @@ nav #navCollapse ul li a{
 #services ul{
     width: 65%;
     margin-left: 17.5%;
+    list-style: none;
 }
 
 #services ul li{
     font-size: 1em;
+}
+
+#services ul li:before {
+  content: '✓ ';
 }
 
 #services .logo-container{
