@@ -93,7 +93,9 @@ nav #navCollapse ul li a{
 }
 
 #services ul li:before {
-  content: '✓ ';
+    content: '✓ ';
+    font-weight: bold;
+    color: rgb(0, 62, 154);
 }
 
 #services .logo-container{
