@@ -6,8 +6,8 @@ $('a[href*="#"]')
   .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -17,9 +17,10 @@ $('a[href*="#"]')
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
+        // - 91.53 to take into account navbar height
         $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
+          scrollTop: target.offset().top - 91.53
+        }, 800, function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -27,7 +28,7 @@ $('a[href*="#"]')
           if ($target.is(":focus")) { // Checking if the target was focused
             return false;
           } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            //$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
           };
         });

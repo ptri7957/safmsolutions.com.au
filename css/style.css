@@ -1,310 +1,405 @@
 @font-face{
     font-family: 'Segoe UI';
-    src: url('segoeui.ttf');
+    src: url('../fonts/segoeui.ttf');
 }
 
 @font-face{
     font-family: 'Keep Calm';
-    src: url('KeepCalm-Medium.ttf')
+    src: url('../fonts/KeepCalm-Medium.ttf');
 }
 
-body, html{
-    font-family: 'Segoe UI';
+p{
+  font-size: 1.1em;
+}
+
+.content ul li{
+  font-size: 1.1em;
+}
+
+html, body{
     height: 100%;
     min-height: 100%;
     padding: 0;
     margin: 0;
 }
 
+hr{
+  border-color: white;
+}
+
 body{
+    /*font-family: 'Segoe UI';*/
+    font-family: 'Barlow', sans-serif;
     display: flex;
     flex-direction: column;
+
 }
 
-p{
-    text-align: center;
+#anchor span{
+  font-size: 1em;
 }
 
-section{
-    padding-top: 100px;
-    padding-bottom: 100px;
+#anchor [class*="col-"] p{
+  font-size: 0.9em;
+  margin-top: 10px;
 }
 
-.is_blue{
-    background-color: rgb(0, 62, 154);
-    color: white;
+.safm-blue{
+  background: linear-gradient(to bottom right, rgba(0, 62, 154, 0.8), #33CDFF), url('../img/logo.png') no-repeat center;
+  background-size: cover;
+  color: white;
 }
 
-.custom-heading{
-    font-size: 2em;
-    text-align: center;
-    padding-bottom: 5px;
+.safm-green{
+  background-color: #43bc9a;
+  color: white;
 }
 
-nav{
-    font-size: 1em;
-    background-color: white;
-    font-family: 'Keep Calm';
-    font-size: 0.7em;
+.safm-darkblue{
+  background-color: rgb(0, 62, 154);
+  color: white;
 }
 
-nav #navCollapse ul li a{
+.safm-gray{
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.8), #585858), url('../img/gray-logo.png') no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+.safm-white{
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  color: black;
+}
+
+.safm-gold{
+  background-color: #EAEB14;
+  color: white;
+}
+
+.gray{
+  background-color: gray;
+  color: white;
+}
+
+#values [class*="col-"] p{
+    font-size: 0.9em;
+}
+
+#the-team p{
+  text-align: left;
+}
+
+#the-team img{
+  width: 80%;
+}
+
+a:hover{
     color: black;
     text-decoration: none;
 }
 
-#logo{
-    color: rgb(0, 102, 255);
-    -webkit-text-stroke-width: 0.5px;
-    -moz-text-stroke-width: 0.5px;
-    -ms-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
-    -moz-text-stroke-color: black;
-    -ms-text-stroke-color: black;
+
+.custom-btn{
+    border: 1px solid white;
+    padding: 5px 20px 5px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    background: transparent;
 }
 
-.navbar-brand{
-    font-size: 2em;
+.custom-btn:hover{
+  color: darkgray;
+  border-color: darkgray;
 }
+
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.banner a, .banner a:hover{
+    color: white;
+}
+
+.banner-text{
+    text-align: center;
+}
+
+.banner-title{
+    font-size: 3.5em;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+    max-width: 50rem;
+}
+
+.banner-subtext{
+    font-weight: lighter;
+    font-size: 1.2em;
+    text-align: center;
+    padding-bottom: 15px;
+    max-width: 50rem;
+    margin: auto;
+}
+
+.ct-btn-scroll {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -25px;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+
+    -webkit-animation: flash infinite 2s;
+    animation: flash infinite 2s;
+}
+
+@-webkit-keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+@keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.content{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.content-heading{
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.elegant-color, .elegant-color span{
+  color: white;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+[class*="col-"]{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#contact [class*="col-"]{
+  padding-top: 0px;
+}
+
+.profile{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.profile .card-title{
+  color: black;
+}
+
+.img-container{
+  width: 18vh;
+  height: 18vh;
+  margin: 0 auto;
+}
+
+.img-container img{
+  width: 70%;
+}
+
 
 #hero{
-    background-color: grey;
-    padding-bottom: 0;
-    padding-top: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/hero_banner.jpg') no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-background-attachment: fixed;
+    background-attachment: fixed;
+    color: white;
 }
 
-#our_people .details{
-    font-size: 0.7em;
-    text-align: center;
+.img-wrapper{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-#our_people .details .col-heading{
-    font-size: 1.2em;
+#teamwork{
+  background: url('../img/services/teamwork.png') no-repeat center;
+  background-color: gray;
+  background-size:10vh 10vh;
 }
 
-#services ul{
-    width: 65%;
-    margin-left: 17.5%;
-    list-style: none;
+#focus{
+  background: url('../img/services/focus.png') no-repeat center;
+  background-color: gray;
+  background-size:10vh 10vh;
 }
 
-#services ul li{
-    font-size: 1em;
+#innovation{
+  background: url('../img/services/innovation.png') no-repeat center;
+  background-color: gray;
+  background-size:10vh 10vh;
 }
 
-#services ul li:before {
-    content: '✓ ';
-    font-weight: bold;
-    color: rgb(0, 62, 154);
+#respect{
+  background: url('../img/services/respect.png') no-repeat center;
+  background-color: gray;
+  background-size:10vh 10vh;
 }
 
-#services .logo-container{
-    text-align: center;
-}
-
-#services .logo-container img{
-    width: 10em;
-    height: 10em;
+#expertise .img-container img{
+  width: 100%;
 }
 
 .col-heading{
     text-align: center;
     font-weight: bold;
-    padding-bottom: 5px;
 }
 
-.img-wrapper{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: white;
-    margin: 0 auto;
-}
-
-.details{
-    margin-bottom: 10px;
-}
-
-#sector1{
-    background: url('../img/Sector icons/Black and white/higher education .png') no-repeat;
-    background-size: cover;
-}
-
-#sector2{
-    background: url('../img/Sector icons/Black and white/aged care.png') no-repeat;
-    background-size: cover;
-}
-
-#sector3{
-    background: url('../img/Sector icons/Black and white/Government .png') no-repeat;
-    background-size: cover;
-}
-
-#sector4{
-    background: url('../img/Sector icons/Black and white/Health .png') no-repeat;
-    background-size: cover;
-}
-
-#sector5{
-    background: url('../img/Sector icons/Black and white/not for profit .png') no-repeat;
-    background-size: cover;
-}
-
-#sector6{
-    background: url('../img/Sector icons/Black and white/private sector.png') no-repeat;
-    background-size: cover;
-}
-
-#profile1{
-    background: url('../img/Mick.jpg') no-repeat;
-    background-size: cover;
-}
-
-#profile2{
-    background: url('../img/lisa.jpg') no-repeat;
-    background-size: cover;
-}
-
-#profile3{
-    background: url('../img/Wayne.jpg') no-repeat;
-    background-size: cover;
-}
-
-#profile4{
-    background: url('../img/Ami.jpg') no-repeat;
-    background-size: cover;
-}
-
-#profile5{
-    background: url('../img/Teifi.jpg') no-repeat;
-    background-size: cover;
-}
-
-#profile6{
-    background: url('../img/Phill.jpg') no-repeat;
-    background-size: cover;
-}
-
-#profile7{
-    background: url('../img/Nicole.jpg') no-repeat;
-    background-size: cover;
-}
-
-#contact a{
-    color: black;
-}
-
-#footer{
-    margin-top: auto;
-    font-size: 1em;
-    text-align: center;
-    background-color: black;
+#about-us{
     color: white;
 }
 
-#map{
-    max-width: 100%;
-    display: block;
-    height: 34em;
+#values span{
+    font-size: 1.1em;
 }
 
-.hero{
-    position: relative;
-    float: left;
+.contact a{
+  color: white;
 }
 
-.hero-text{
-    font-family: 'Keep Calm';
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    color: white;
+.service .content-heading{
+  width: 100%;
+  margin: auto;
 }
 
-.hero img{
-    width: 100%;
-    -webkit-filter: brightness(0.5);
-    -moz-filter: brightness(0.5);
-    -ms-filter: brightness(0.5);
+.service .content-heading, .service p, .service ul li{
+  text-align: left;
 }
 
-.hero-text .hero-heading{
-    font-size: 250%;
+.section-text p, .section-text ul li{
+  width: 60%;
+  margin-left: 20%;
+  text-align: justify;
 }
 
-.hero-text .sub-text{
-    font-size: 1.5em;
+#map-container{
+    height: 600px !important;
 }
 
-.hero-text .sub-text p{
-    text-align: left;
-    font-size: 120%;
-}
-
-/************* MEDIA QUERIES *****************/
-
-/* IPhone X Portrait */
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : portrait) { 
-    #services ul{
-        width: 100%;
-        margin-left: 0;
+@media (max-width: 1024px){
+    .banner-title{
+        font-size: 2em;
     }
-    #services ul li{
+
+    .banner-subtext{
         font-size: 1em;
     }
-}
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-and (orientation : portrait) {
-  
-}
+    .banner-subtext ul{
+        font-size: 0.5em;
+    }
 
-/* IPhone 5/5S Portrait */
-@media only screen 
-and (max-device-width : 320px) 
-and (orientation : portrait) {
+    .content-heading, .section-text p, .section-text ul li{
+      width: 100%;
+      margin-left: auto;
+    }
 
-}
-
-@media only screen 
-and (max-device-width : 360px) 
-and (orientation : portrait) {
+    .img-container{
+      width: 10vh;
+      height: 10vh;
+    }
 
 }
 
-/* IPad Pro*/
-@media only screen 
-and (min-device-width: 1024px) 
-and (max-device-width: 1366px) 
-and (orientation: portrait){
 
-}
+@media (max-width:599px){
+    .service .content-heading{
+      width: 100%;
+      text-align: center;
+    }
 
-@media only screen 
-and (min-device-width: 768px)
-and (max-device-width: 1023px)
-and (orientation: portrait){
-    
-    #services ul{
-        width: 80%;
-        margin-left: 10%;
+    p, .content ul li{
+      font-size: 0.9em;
+    }
+
+    .img-container{
+      width: 18vh;
+      height: 18vh;
     }
 }
 
-@media all and (max-width: 768px){
-    .hero-text .hero-heading{
-        font-size: 100%;
-    }
-    
-    .hero-text .sub-text{
-        font-size: 0.8em;
-    }
+@media (max-width: 568px){
+   .banner-title{
+    font-size: 1.6em;
+  }
+  .content-heading{
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 320px){
+  .banner-title{
+    font-size: 1.5em;
+  }
+
+  .banner-subtext{
+    font-size: 0.8em;
+  }
+
+  .content-heading{
+    font-size: 1.2em;
+  }
+
+  h7{
+    font-size: 0.8em;
+  }
+
+  h8{
+    font-size: 0.7em;
+  }
+
+  [class*="col-"]{
+    padding-top: 0px;
+  }
+
+  #contact [class*="col-"] div{
+    font-size: 0.7em;
+  }
 }
